@@ -3,16 +3,37 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Srikanth B S | Python Developer • Full Stack Engineer • AI Enthusiast • Solution Architect</title>
+<title>Srikanth B S | AI Automation Engineer • Python Backend • LLM & RAG Systems • Solution Architect</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2300f0ff'/%3E%3Cstop offset='1' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-size='52' font-weight='900' font-family='sans-serif' text-anchor='middle' fill='url(%23g)'%3ES%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a0a0f">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-<meta name="description" content="Srikanth B S – Python Backend Developer, Full Stack Engineer, AI Enthusiast & Solution Architect. Building scalable systems and AI-powered solutions.">
-<meta property="og:title" content="Srikanth B S | Python Developer • Full Stack Engineer • AI Enthusiast">
-<meta property="og:description" content="Award-winning Python Backend Developer delivering transformative full-stack solutions and AI platforms.">
+<meta name="description" content="Srikanth B S – AI Automation Engineer & Python Backend Developer. LLM-powered platforms: intent analysis for customer support, RAG knowledge wikis, Temporal-orchestrated pipelines, pgvector search, React dashboards.">
+<meta property="og:title" content="Srikanth B S | AI Automation Engineer • Python Backend • LLM & RAG Systems">
+<meta property="og:description" content="Award-winning engineer building LLM automation platforms — intent analysis, self-updating knowledge wikis, RAG assistants — with Python, Temporal, PostgreSQL/pgvector, Gemini & React.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://sri421.github.io/srikanthbs/">
+<meta property="og:image" content="https://sri421.github.io/srikanthbs/og_banner.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Srikanth B S | AI Automation Engineer • Python Backend • LLM & RAG Systems">
+<meta name="twitter:image" content="https://sri421.github.io/srikanthbs/og_banner.png">
+<link rel="canonical" href="https://sri421.github.io/srikanthbs/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Srikanth B S",
+  "jobTitle": "AI Automation Engineer & Full Stack Software Engineer",
+  "email": "mailto:srikanth974213@gmail.com",
+  "telephone": "+91 7975637082",
+  "address": {"@type": "PostalAddress", "addressLocality": "Shimoga", "addressRegion": "Karnataka", "addressCountry": "IN"},
+  "sameAs": ["https://linkedin.com/in/srikanth-b-s-a9a567151", "https://github.com/sri421"],
+  "knowsAbout": ["LLM Automation", "RAG Systems", "Temporal Workflows", "Python", "PostgreSQL", "pgvector", "React", "Cloud Architecture", "AI/ML"]
+}
+</script>
 
 <style>
 :root{
@@ -1165,6 +1186,196 @@ nav.mobile-menu a{
   font-size:18px;
 }
 
+/* ===== FEATURED FLAGSHIP PROJECTS ===== */
+.featured-stack{
+  display:flex;
+  flex-direction:column;
+  gap:50px;
+  margin:60px 0 90px;
+}
+
+.featured-project{
+  background:rgba(18,18,26,.92);
+  border:1px solid rgba(0,240,255,.2);
+  border-radius:28px;
+  overflow:hidden;
+  backdrop-filter:blur(20px);
+  position:relative;
+  transition:all .4s ease;
+}
+
+.featured-project::before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  height:4px;
+  background:var(--gradient-cyber);
+}
+
+.featured-project:hover{
+  border-color:var(--primary);
+  box-shadow:0 25px 80px rgba(0,240,255,.25);
+  transform:translateY(-6px);
+}
+
+.featured-header{
+  padding:44px 48px 0;
+}
+
+.featured-badge{
+  display:inline-block;
+  padding:7px 18px;
+  background:rgba(255,0,255,.12);
+  border:1px solid rgba(255,0,255,.45);
+  border-radius:20px;
+  font-size:11px;
+  color:#ff8ae2;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-weight:700;
+  margin-bottom:18px;
+}
+
+.featured-title{
+  font-family:'Orbitron',sans-serif;
+  font-size:32px;
+  font-weight:700;
+  margin-bottom:10px;
+  background:var(--gradient-3);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+
+.featured-tagline{
+  font-size:17px;
+  color:var(--muted);
+  max-width:900px;
+  line-height:1.8;
+}
+
+.featured-body{
+  display:grid;
+  grid-template-columns:1fr 1.2fr;
+  gap:44px;
+  padding:32px 48px 44px;
+  align-items:start;
+}
+
+.featured-points{
+  list-style:none;
+  margin-bottom:26px;
+}
+
+.featured-points li{
+  padding-left:26px;
+  position:relative;
+  margin-bottom:14px;
+  color:var(--text);
+  line-height:1.7;
+  font-size:15px;
+}
+
+.featured-points li::before{
+  content:'▹';
+  position:absolute;
+  left:0;
+  color:var(--primary);
+  font-size:18px;
+}
+
+.featured-points li strong{
+  color:var(--primary);
+  font-weight:600;
+}
+
+.featured-diagram > img{
+  aspect-ratio:1400/760;
+}
+
+.featured-diagram img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:18px;
+  border:1px solid rgba(0,240,255,.25);
+  box-shadow:0 15px 50px rgba(0,0,0,.5);
+  transition:all .3s ease;
+}
+
+.featured-diagram img:hover{
+  border-color:var(--primary);
+  box-shadow:0 15px 60px rgba(0,240,255,.2);
+}
+
+.workflow-details{
+  margin-top:18px;
+}
+
+.workflow-details summary{
+  cursor:pointer;
+  padding:12px 20px;
+  border-radius:12px;
+  background:rgba(0,240,255,.07);
+  border:1px solid rgba(0,240,255,.3);
+  color:var(--primary);
+  font-size:14px;
+  font-weight:600;
+  letter-spacing:.5px;
+  list-style:none;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  transition:all .3s ease;
+}
+
+.workflow-details summary::-webkit-details-marker{display:none}
+
+.workflow-details summary::after{
+  content:'▾';
+  transition:transform .3s ease;
+}
+
+.workflow-details[open] summary::after{
+  transform:rotate(180deg);
+}
+
+.workflow-details summary:hover{
+  background:rgba(0,240,255,.14);
+  box-shadow:var(--glow);
+}
+
+.workflow-details img{
+  margin-top:18px;
+}
+
+@media(max-width:1024px){
+  .featured-body{
+    grid-template-columns:1fr;
+    gap:30px;
+  }
+}
+
+@media(max-width:768px){
+  .featured-header{
+    padding:30px 24px 0;
+  }
+
+  .featured-body{
+    padding:24px 24px 30px;
+  }
+
+  .featured-title{
+    font-size:24px;
+  }
+
+  .featured-tagline{
+    font-size:15px;
+  }
+}
+
 /* ===== PROJECTS SHOWCASE ===== */
 .projects-grid{
   display:grid;
@@ -1202,7 +1413,8 @@ nav.mobile-menu a{
 
 .project-image{
   width:100%;
-  height:250px;
+  aspect-ratio:760/460;
+  height:auto;
   background:linear-gradient(135deg,rgba(0,240,255,.2),rgba(124,58,237,.2));
   display:flex;
   align-items:center;
@@ -1210,6 +1422,21 @@ nav.mobile-menu a{
   font-size:80px;
   position:relative;
   overflow:hidden;
+  border-bottom:1px solid rgba(0,240,255,.15);
+}
+
+.project-image img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .4s ease;
+}
+
+.project-card:hover .project-image img{
+  transform:scale(1.03);
 }
 
 .project-image::after{
@@ -1887,7 +2114,8 @@ footer{
   }
   
   .project-image{
-    height:200px;
+    aspect-ratio:760/460;
+    height:auto;
   }
   
   .project-content{
@@ -2079,20 +2307,20 @@ footer{
 <section class="hero">
   <div class="hero-content">
     <div class="hero-text">
-      <div class="hero-badge">🐍 Python Backend Developer • Full Stack Engineer</div>
+      <div class="hero-badge">🤖 AI Automation • LLM & RAG Systems • Python Backend</div>
       <h1>Srikanth B S</h1>
-      <h2>Python Backend Developer • Full Stack Engineer • AI Enthusiast • Solution Architect</h2>
+      <h2>AI Automation Engineer • Python Backend Developer • Full Stack Engineer • Solution Architect</h2>
       <p class="hero-description">
-        Architecting the future with cutting-edge AI/ML systems, cloud-native platforms, and scalable solutions that drive measurable business impact. Specialized in transforming complex challenges into elegant, production-grade innovations.
+        I build LLM-powered automation platforms — intent analysis engines that turn support tickets into reusable playbooks, and self-updating knowledge wikis with RAG assistants. Durable pipelines with Temporal, semantic search on PostgreSQL + pgvector, and React front-ends that make it all usable.
       </p>
       
       <div class="hero-stats">
         <div class="stat-item">
-          <span class="stat-number" data-count="5">0</span>
+          <span class="stat-number" data-count="6">0</span>
           <span class="stat-label">Years Experience</span>
         </div>
         <div class="stat-item">
-          <span class="stat-number" data-count="12">0</span>
+          <span class="stat-number" data-count="14">0</span>
           <span class="stat-label">Major Projects</span>
         </div>
         <div class="stat-item">
@@ -2110,6 +2338,10 @@ footer{
           View Portfolio
           <span>↓</span>
         </a>
+        <a href="srikanthbs.pdf" target="_blank" class="btn-secondary">
+          Download Resume
+          <span>⤓</span>
+        </a>
       </div>
     </div>
     
@@ -2123,10 +2355,10 @@ footer{
         <div class="code-content">
           <div class="code-line"><span class="keyword">class</span> <span class="function">SrikanthBS</span>:</div>
           <div class="code-line">    <span class="keyword">def</span> <span class="function">__init__</span>(self):</div>
-          <div class="code-line">        self.role = <span class="string">"AI Architect"</span></div>
-          <div class="code-line">        self.expertise = [<span class="string">"AI/ML"</span>, <span class="string">"Cloud"</span>, <span class="string">"Leadership"</span>]</div>
-          <div class="code-line">        self.impact = <span class="string">"$2M+ revenue"</span></div>
-          <div class="code-line">    <span class="comment"># Building the future, one line at a time</span></div>
+          <div class="code-line">        self.role = <span class="string">"AI Automation Engineer"</span></div>
+          <div class="code-line">        self.stack = [<span class="string">"Temporal"</span>, <span class="string">"RAG"</span>, <span class="string">"pgvector"</span>]</div>
+          <div class="code-line">        self.llms = [<span class="string">"Gemini"</span>, <span class="string">"GPT-4"</span>, <span class="string">"Claude"</span>]</div>
+          <div class="code-line">    <span class="comment"># Tickets → playbooks · Docs → wikis</span></div>
         </div>
       </div>
       
@@ -2148,9 +2380,25 @@ footer{
   <div class="expertise-grid">
     <div class="expertise-card">
       <div class="expertise-content">
+        <div class="expertise-icon">🧠</div>
+        <h3>LLM Automation & RAG</h3>
+        <p>Designing end-to-end LLM platforms: intent classification of support conversations, retrieval-augmented knowledge assistants, and durable Temporal pipelines that keep everything in sync — grounded, fault-tolerant, production-grade.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">Gemini 3.1 Pro</span>
+          <span class="tech-tag">RAG</span>
+          <span class="tech-tag">Embeddings</span>
+          <span class="tech-tag">pgvector</span>
+          <span class="tech-tag">Temporal</span>
+          <span class="tech-tag">Prompt Engineering</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="expertise-card">
+      <div class="expertise-content">
         <div class="expertise-icon">🤖</div>
         <h3>AI/ML Engineering</h3>
-        <p>Building production-grade AI systems with GPT-4, Claude, and custom ML models. Achieving 94.7% accuracy in document processing and deploying intelligent automation at scale.</p>
+        <p>Building production-grade AI systems with Gemini, GPT-4, Claude, and custom ML models. Achieving 94.7% accuracy in document processing and deploying intelligent automation at scale.</p>
         <div class="tech-tags">
           <span class="tech-tag">GPT-4</span>
           <span class="tech-tag">Claude</span>
@@ -2161,7 +2409,7 @@ footer{
         </div>
       </div>
     </div>
-    
+
     <div class="expertise-card">
       <div class="expertise-content">
         <div class="expertise-icon">☁️</div>
@@ -2246,7 +2494,7 @@ footer{
   <div class="section-header">
     <div class="section-label">Career Journey</div>
     <h2 class="section-title">Professional Experience</h2>
-    <p class="section-subtitle">5+ years of progressive innovation and leadership</p>
+    <p class="section-subtitle">6+ years of progressive innovation and leadership</p>
   </div>
   
   <div class="timeline">
@@ -2263,6 +2511,8 @@ footer{
           Leading an 8+ member team building AI-powered automation platforms. Architecting microservices handling 10,000+ concurrent users with 99.99% uptime.
         </div>
         <ul class="timeline-achievements">
+          <li>Built an <strong>Intent Analysis Automation</strong> platform — classifies e-commerce support tickets by intent &amp; response type (embeddings + Gemini 3.1 Pro) and generates triggers, templates &amp; decision trees as a reusable service playbook</li>
+          <li>Built <strong>Knowledge Wiki + Ask Wiki</strong> — OAuth drive sync that turns company docs into a Wikipedia-style knowledge base with a RAG assistant (pgvector + LLM, grounded answers with citations)</li>
           <li>Architected AI/OCR/NLP pipelines with 94.7% accuracy using GPT-4 and Claude APIs</li>
           <li>Migrated to serverless architecture, reducing infrastructure costs by 60%</li>
           <li>Built event-driven analytics processing 50,000+ events/second</li>
@@ -2271,11 +2521,12 @@ footer{
         </ul>
         <div class="tech-tags">
           <span class="tech-tag">Python</span>
-          <span class="tech-tag">Flask</span>
           <span class="tech-tag">FastAPI</span>
+          <span class="tech-tag">Temporal</span>
+          <span class="tech-tag">Gemini 3.1 Pro</span>
+          <span class="tech-tag">PostgreSQL + pgvector</span>
           <span class="tech-tag">React</span>
           <span class="tech-tag">Azure</span>
-          <span class="tech-tag">GPT-4</span>
           <span class="tech-tag">Kubernetes</span>
         </div>
       </div>
@@ -2489,10 +2740,90 @@ footer{
     <h2 class="section-title">Impactful Projects</h2>
     <p class="section-subtitle">Transforming ideas into production-grade solutions</p>
   </div>
-  
+
+  <!-- ===== FLAGSHIP LLM AUTOMATION PLATFORMS ===== -->
+  <div class="featured-stack">
+
+    <!-- Flagship 1: Intent Analysis Automation -->
+    <article class="featured-project">
+      <div class="featured-header">
+        <span class="featured-badge">⚡ Flagship · LLM Automation</span>
+        <h3 class="featured-title">Intent Analysis Automation</h3>
+        <p class="featured-tagline">
+          Turns raw e-commerce customer-support conversations — every incoming and outgoing ticket message — into a reusable service playbook. Each message is classified for <em>intent</em> and <em>response type</em>, and the analysis layer generates the triggers, response templates, and decision trees that tell any customer-service team exactly which process to follow.
+        </p>
+      </div>
+      <div class="featured-body">
+        <div>
+          <ul class="featured-points">
+            <li><strong>Durable pipeline on Temporal</strong> — ingest → normalize → embed → classify → aggregate, with automatic retries and fault-tolerance</li>
+            <li><strong>Embeddings + Gemini 3.1 Pro</strong> classify every message's intent and required response type</li>
+            <li><strong>Auto-generated playbook</strong> — triggers (when to act), templates (what to send), decision trees (which path per intent × response type), versioned in PostgreSQL</li>
+            <li><strong>React analytics dashboard</strong> — intent explorer, template library, decision-tree viewer for support analysts</li>
+            <li><strong>Reusable reference</strong> — any other customer-service operation can adopt the proven playbook</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Temporal</span>
+            <span class="tech-tag">Embeddings</span>
+            <span class="tech-tag">Gemini 3.1 Pro</span>
+            <span class="tech-tag">ReactJS</span>
+          </div>
+        </div>
+        <div class="featured-diagram">
+          <img src="intent_architecture.svg" alt="Intent Analysis Automation — system architecture: helpdesk tickets flow through a Temporal pipeline (normalize, embed, Gemini classification, aggregate) into a PostgreSQL service playbook of triggers, templates and decision trees, surfaced in a React dashboard" loading="lazy">
+          <details class="workflow-details">
+            <summary>View the decision workflow</summary>
+            <img src="intent_flow.svg" alt="Workflow: a ticket message is classified for intent and response type, routed through the decision tree, and answered via trigger + template" loading="lazy">
+          </details>
+        </div>
+      </div>
+    </article>
+
+    <!-- Flagship 2: Knowledge Wiki -->
+    <article class="featured-project">
+      <div class="featured-header">
+        <span class="featured-badge">📚 Flagship · RAG Platform</span>
+        <h3 class="featured-title">Knowledge Wiki + Ask Wiki</h3>
+        <p class="featured-tagline">
+          Connects a company's document drive via OAuth, watches the folder they grant, and turns every document into a Wikipedia-style page — side menus, sections, cross-links — kept in sync on every addition, update, or deletion. <em>Ask Wiki</em> lets the company's support staff query that knowledge in real time and get grounded answers with citations.
+        </p>
+      </div>
+      <div class="featured-body">
+        <div>
+          <ul class="featured-points">
+            <li><strong>Company OAuth logins</strong> — folder-scoped drive access granted by each customer, fully multi-tenant</li>
+            <li><strong>Change tracker</strong> — additions create pages, edits re-sync them, deletions retire them: zero-touch</li>
+            <li><strong>Temporal doc pipelines</strong> — parse → chunk → embed → generate pages → cross-link &amp; index</li>
+            <li><strong>PostgreSQL + pgvector</strong> stores pages, chunks and embeddings for semantic retrieval</li>
+            <li><strong>Ask Wiki (RAG)</strong> — on-time LLM answers grounded strictly in the company's wiki docs, with source citations</li>
+          </ul>
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">PostgreSQL + pgvector</span>
+            <span class="tech-tag">Temporal</span>
+            <span class="tech-tag">Embeddings</span>
+            <span class="tech-tag">Gemini 3.1 Pro</span>
+            <span class="tech-tag">OAuth</span>
+            <span class="tech-tag">ReactJS</span>
+          </div>
+        </div>
+        <div class="featured-diagram">
+          <img src="wiki_architecture.svg" alt="Knowledge Wiki architecture: an OAuth-connected company drive is watched by a change tracker; Temporal pipelines parse, chunk, embed and generate Wikipedia-style pages stored in PostgreSQL with pgvector, served by a React wiki UI and the Ask Wiki RAG assistant" loading="lazy">
+          <details class="workflow-details">
+            <summary>View the Ask Wiki RAG flow</summary>
+            <img src="wiki_askwiki.svg" alt="Ask Wiki flow: a support question is embedded, matched against wiki chunks in pgvector, and answered by Gemini 3.1 Pro with citations" loading="lazy">
+          </details>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
   <div class="projects-grid">
     <div class="project-card">
-      <div class="project-image">🎓</div>
+      <div class="project-image"><img src="malpractice_flow.svg" alt="Malpractice detection data flow: webcam stream → face verification and head-pose tracking → risk scoring → proctor dashboard alerts" loading="lazy"></div>
       <div class="project-content">
         <span class="project-category">AI • Computer Vision</span>
         <h3 class="project-title">Malpractice Detection System</h3>
@@ -2519,7 +2850,7 @@ footer{
     </div>
     
     <div class="project-card">
-      <div class="project-image">📄</div>
+      <div class="project-image"><img src="smarteval_flow.svg" alt="SmartEval data flow: scanned handwritten scripts → OCR → NLP semantic evaluation → scores and teacher review dashboard" loading="lazy"></div>
       <div class="project-content">
         <span class="project-category">AI • NLP</span>
         <h3 class="project-title">SmartEval – AI Answer Evaluation</h3>
@@ -2546,7 +2877,7 @@ footer{
     </div>
     
     <div class="project-card">
-      <div class="project-image">🔒</div>
+      <div class="project-image"><img src="surveillance_flow.svg" alt="Surveillance data flow: CCTV feeds → YOLO person detection → face-embedding watchlist match → security console alerts" loading="lazy"></div>
       <div class="project-content">
         <span class="project-category">AI • Security</span>
         <h3 class="project-title">Intelligent Surveillance System</h3>
@@ -2573,7 +2904,7 @@ footer{
     </div>
     
     <div class="project-card">
-      <div class="project-image">📊</div>
+      <div class="project-image"><img src="analytics_flow.svg" alt="Analytics platform data flow: client apps → API gateway and microservices with Redis → PostgreSQL and event streams → real-time React dashboards" loading="lazy"></div>
       <div class="project-content">
         <span class="project-category">Cloud • Analytics</span>
         <h3 class="project-title">Enterprise Analytics Platform</h3>
@@ -2600,7 +2931,7 @@ footer{
     </div>
     
     <div class="project-card">
-      <div class="project-image">🏥</div>
+      <div class="project-image"><img src="insurance_flow.svg" alt="Insurance document AI data flow: documents → OCR + GPT-4 Vision extraction → validation and structuring → claims processing and audit reports" loading="lazy"></div>
       <div class="project-content">
         <span class="project-category">AI • Insurance</span>
         <h3 class="project-title">Insurance Document AI</h3>
@@ -2627,7 +2958,7 @@ footer{
     </div>
     
     <div class="project-card">
-      <div class="project-image">🚗</div>
+      <div class="project-image"><img src="pothole_flow.svg" alt="Pothole detection data flow: vehicle camera + GPS → CV detection → geo-tagging and severity mapping → municipal alerts" loading="lazy"></div>
       <div class="project-content">
         <span class="project-category">Computer Vision • IoT</span>
         <h3 class="project-title">Realtime Pothole Detection</h3>
@@ -2799,6 +3130,16 @@ footer{
             <div class="skill-dot active"></div>
           </div>
         </div>
+        <div class="skill-item">
+          <span class="skill-name">Temporal Workflows</span>
+          <div class="skill-level">
+            <div class="skill-dot active"></div>
+            <div class="skill-dot active"></div>
+            <div class="skill-dot active"></div>
+            <div class="skill-dot active"></div>
+            <div class="skill-dot active"></div>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -2849,10 +3190,20 @@ footer{
     </div>
     
     <div class="skill-category">
-      <h3>AI/ML</h3>
+      <h3>AI/ML & LLM</h3>
       <div class="skill-list">
         <div class="skill-item">
-          <span class="skill-name">GPT-4/Claude APIs</span>
+          <span class="skill-name">Gemini/GPT-4/Claude APIs</span>
+          <div class="skill-level">
+            <div class="skill-dot active"></div>
+            <div class="skill-dot active"></div>
+            <div class="skill-dot active"></div>
+            <div class="skill-dot active"></div>
+            <div class="skill-dot active"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <span class="skill-name">RAG & Embeddings</span>
           <div class="skill-level">
             <div class="skill-dot active"></div>
             <div class="skill-dot active"></div>
@@ -2898,7 +3249,7 @@ footer{
       <h3>Databases</h3>
       <div class="skill-list">
         <div class="skill-item">
-          <span class="skill-name">PostgreSQL</span>
+          <span class="skill-name">PostgreSQL + pgvector</span>
           <div class="skill-level">
             <div class="skill-dot active"></div>
             <div class="skill-dot active"></div>
@@ -3022,15 +3373,22 @@ footer{
       </div>
       
       <div class="contact-item">
+        <div class="contact-icon">💻</div>
+        <div class="contact-label">GitHub</div>
+        <div class="contact-value">
+          <a href="https://github.com/SRI421" target="_blank">github.com/SRI421</a>
+        </div>
+      </div>
+
+      <div class="contact-item">
         <div class="contact-icon">📍</div>
         <div class="contact-label">Location</div>
         <div class="contact-value">Shimoga, Karnataka, India</div>
       </div>
     </div>
     
-    <form class="contact-form" name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact">
-      
+    <form class="contact-form" name="contact" id="contactForm">
+
       <div class="form-group">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required placeholder="John Doe">
@@ -3058,7 +3416,7 @@ footer{
         </svg>
         Download Resume (PDF)
       </a>
-      <p style="color:var(--muted); margin-top:15px; font-size:13px;">Last updated: January 2026</p>
+      <p style="color:var(--muted); margin-top:15px; font-size:13px;">Last updated: August 2026</p>
     </div>
   </div>
 </section>
@@ -3069,7 +3427,7 @@ footer{
     <div class="footer-about">
       <h3>SRI.DEV</h3>
       <p>
-        Python Backend Developer and Full Stack Engineer with expertise in AI solutions and solution architecture. Specialized in building intelligent, scalable systems that transform businesses.
+        AI Automation Engineer and Full Stack Developer building LLM-powered platforms — intent analysis, RAG knowledge systems, durable Temporal pipelines. Specialized in intelligent, scalable systems that transform businesses.
       </p>
       <div class="social-links">
         <a href="https://linkedin.com/in/srikanth-b-s-a9a567151" target="_blank" class="social-link">💼</a>
@@ -3092,6 +3450,7 @@ footer{
     <div class="footer-links">
       <h4>Services</h4>
       <ul>
+        <li><a href="#contact">LLM Automation & RAG Systems</a></li>
         <li><a href="#contact">Python Backend Development</a></li>
         <li><a href="#contact">Full Stack Solutions</a></li>
         <li><a href="#contact">AI/ML Integration</a></li>
@@ -3101,7 +3460,7 @@ footer{
   </div>
   
   <div class="footer-bottom">
-    © 2026 Srikanth B S · Python Backend Developer · Full Stack Engineer · AI Enthusiast · Solution Architect
+    © 2026 Srikanth B S · AI Automation Engineer · Python Backend Developer · Full Stack Engineer · Solution Architect
   </div>
 </footer>
 
@@ -3342,14 +3701,20 @@ revealElements.forEach(el => {
   revealObserver.observe(el);
 });
 
-// ===== FORM SUBMISSION =====
-const contactForm = document.querySelector('.contact-form');
+// ===== FORM SUBMISSION (opens the visitor's email client — works on GitHub Pages) =====
+const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', function(e) {
-    // Netlify handles the form submission
+    e.preventDefault();
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    const subject = encodeURIComponent('Portfolio contact from ' + name);
+    const body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
+    window.location.href = 'mailto:srikanth974213@gmail.com?subject=' + subject + '&body=' + body;
     const btn = this.querySelector('.submit-btn');
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
+    btn.textContent = 'Opening your email app…';
+    setTimeout(() => { btn.textContent = 'Send Message'; }, 4000);
   });
 }
 </script>

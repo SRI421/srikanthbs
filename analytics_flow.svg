@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 460" font-family="'Space Grotesk','Segoe UI',system-ui,sans-serif" role="img" aria-label="Enterprise analytics platform data flow">
+  <defs>
+    <linearGradient id="cy3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#00f0ff"/><stop offset=".5" stop-color="#7c3aed"/><stop offset="1" stop-color="#ff00ff"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13131d"/><stop offset="1" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <marker id="arrf3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7.5" markerHeight="7.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#00d5e8"/>
+    </marker>
+  </defs>
+  <rect width="760" height="460" fill="#0a0a0f"/>
+  <rect x="0" y="0" width="760" height="4" fill="url(#cy3)" opacity=".85"/>
+  <text x="60" y="40" fill="#5b6b80" font-size="11.5" letter-spacing="3" font-weight="700">DATA FLOW</text>
+  <text x="700" y="40" text-anchor="end" fill="#7fe9f5" font-size="11.5" letter-spacing="2" font-weight="700">CLOUD PLATFORM</text>
+
+  <rect x="60" y="64" width="640" height="66" rx="13" fill="url(#card3)" stroke="#00d5e8" stroke-width="1.4"/>
+  <text x="94" y="106" text-anchor="middle" font-size="24">🌐</text>
+  <text x="122" y="93" fill="#e8f6f8" font-size="15.5" font-weight="700">Client apps &amp; integrations</text>
+  <text x="122" y="114" fill="#9aa3b2" font-size="12.3">10,000+ concurrent users</text>
+  <line x1="380" y1="130" x2="380" y2="162" stroke="#00d5e8" stroke-width="2" marker-end="url(#arrf3)"/>
+  <rect x="60" y="166" width="640" height="66" rx="13" fill="url(#card3)" stroke="#a78bfa" stroke-width="1.4"/>
+  <text x="94" y="208" text-anchor="middle" font-size="24">🧩</text>
+  <text x="122" y="195" fill="#e8f6f8" font-size="15.5" font-weight="700">API gateway → microservices</text>
+  <text x="122" y="216" fill="#9aa3b2" font-size="12.3">FastAPI services · Redis caching · async processing</text>
+  <line x1="380" y1="232" x2="380" y2="264" stroke="#00d5e8" stroke-width="2" marker-end="url(#arrf3)"/>
+  <rect x="60" y="268" width="640" height="66" rx="13" fill="url(#card3)" stroke="#a78bfa" stroke-width="1.4"/>
+  <text x="94" y="310" text-anchor="middle" font-size="24">🗄️</text>
+  <text x="122" y="297" fill="#e8f6f8" font-size="15.5" font-weight="700">PostgreSQL + event streams</text>
+  <text x="122" y="318" fill="#9aa3b2" font-size="12.3">transactions · analytics aggregation</text>
+  <line x1="380" y1="334" x2="380" y2="366" stroke="#00d5e8" stroke-width="2" marker-end="url(#arrf3)"/>
+  <rect x="60" y="370" width="640" height="66" rx="13" fill="url(#card3)" stroke="#ff5ecd" stroke-width="1.4"/>
+  <text x="94" y="412" text-anchor="middle" font-size="24">📈</text>
+  <text x="122" y="399" fill="#e8f6f8" font-size="15.5" font-weight="700">Real-time React dashboards</text>
+  <text x="122" y="420" fill="#9aa3b2" font-size="12.3">sub-second responses · 99.9% uptime</text>
+</svg>
